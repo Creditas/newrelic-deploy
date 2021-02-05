@@ -1,17 +1,13 @@
 language: python
-
 python:
- - "3.6"
-
+- '3.6'
 install: pip install -e .
-
 script:
-  - pip install -r requirements.txt
-
+- pip install -r requirements.txt
 deploy:
   provider: pypi
   user: creditas
   password:
-    secure: "scITcpqiQQwQFJDpK0l7aF0aGKzJLQquonS6dB+n4mNLxCy8bsqWHHpyKbqDJ3KFO/J+O43LPlhFWr3Vnn77O9iOo1v7obxSvLoQ6zgk5A3/Gi8qhC5SSBSi45hVjzLMxPc8TtbiFqJly8Q8wjZuRX8lZB9utm3mXbDLtOo8jaahGkIC8n2lFenJZiZWl9n6pbZcNtBOQGYO8OudkkDOW0TDyDbhmEAXbj0NT+LQS5x92bU07fequywDciDFuyCqP373vgkk++mNxFhIHzw3ly+FKWmx+8zr8L92xoDw5c/6NkIC5sW/xIf24b/L6GuG4uj8yfqxThNOQYMj5lohK4QlehwzrlYIBFxhEU6t8r6l9kmCCUp2pvkZNkzlc6BBglpP5ZG4vRZnm4WBfhIVVfNBzQlvFPUDvUKG/X4qGFz64Om+P3FcFyg3rK2ftXOh0GUSbY6565NmCUxDbEW7/HOyHgboNSjlI8PKcXpGoG662aR7GX2Cvdm/zo4t9gtXblpjRG6TEzXTzIjo2Su1VCyugY82OWCL4bfGCCZxQGP7VjXU4Q6Gp12lcjIto1auQIK97hHqYhIxULs4aI4nUX3Z+rMVC9I5ozhAVpsW1PKM+/q0cQR5YYbdzO/Tj6jQLHm0ncy+HK/8pEYyai+EHPnlmsE9ETxVEqoiMPmnbp0="
-  on:
+    secure: GxIuDzVVtZp6yZph1+WCIqW7nXtHcmGTV7mKcOYwfuk2Hg7A/6TAdwcfhex2ZsNpkrSqXAg7niztV0D+gfE8OwwlRnlGEDMnqckFr1oWbNreCRqV2pZpuowQsIcxVTk4fWYhswh5zsnSYuAlytocCWsFNNf8odOCGORpVU71FZITCM/nYfTzVzokrB6oyIwjkjDfzX0AuzEe+BUqS42CHC+nYCHRjI8YvWMlwMt6n6LPJVNxydECrhDYowT2ERHGJRc75oolX/q/LwnJPu8pNWjbFjCdmfBGvnprnUxfkxP+C10H/0SfSij7U+1NP9MJz9zLUaPekRtWVAiW8nMr7WF/oUmfKvbWj+uLcyVGuYabrwktaA22GFqIJiurGYLYZjF/9XC4VWqwHULghHbvV25Rnm8esys8N37QWrT9vQt1ZARk6OhpQcpmKs8eR5fCmdQnkW1xXN5Gl7mZJikvPv28VE3R7RB3swdOfhb8Bs9e1fSI45IVmrlCrtlDu9s8O9tC84FV3xUOtozLxU8Fsc9bv3J0lvXjhEQ9WQTCWbZKIf695sR+Qr7GZTMiS4yy9swagharYWcM9VSrXcmqStAkOStmzRawFrtZc57LlRMqd8wYGlI+XWkFM6kFRgqto6HRuZDQdlPx8r6FdiUiqF2ionwSgEN1uIvw5WgMKlY=
+  true:
     branch: master
