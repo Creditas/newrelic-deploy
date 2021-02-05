@@ -29,7 +29,7 @@ def main():
             }
         }
 
-        endpoint = f'https://api.newrelic.com/v2/applications/{args.app}/deployments.json'
+        endpoint = 'https://api.newrelic.com/v2/applications/{}/deployments.json'.format(args.app)
 
         headers = {
             'X-Api-Key': args.key,
