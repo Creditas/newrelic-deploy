@@ -36,7 +36,7 @@ def main():
             'Content-Type': 'application/json'
         }
         try:
-            r = requests.post(endpoint, headers=headers, data=payload)
+            r = requests.post(endpoint, headers=headers, data=json.dumps(payload))
             r.raise_for_status()
             print('NewRelic Deployment successfully notified')
         except requests.exceptions.HTTPError as e:
