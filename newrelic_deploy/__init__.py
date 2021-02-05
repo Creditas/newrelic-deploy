@@ -25,8 +25,7 @@ def main():
                 'revision': last_revision,
                 'changelog': last_changes,
                 'description': last_changes,
-                'user': author,
-                'timestamp': ''
+                'user': author
             }
         }
 
@@ -36,15 +35,11 @@ def main():
             'X-Api-Key': args.key,
             'Content-Type': 'application/json'
         }
-
-        print(endpoint)
-        print(headers)
-        print(payload)
-
-        # requests.post(endpoint, headers=headers, data=payload)
-
+        try:
+            r = requests.post(endpoint, headers=headers, data=payload)
+            r.raise_for_status()
+            print('NewRelic Deployment successfully notified')
+        except requests.exceptions.HTTPError as e:
+            raise SystemExit(e)
     else:
         print('Invalid --key and --app is required')
-
-
-main()

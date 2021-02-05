@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="newrelic_deploy",
-    version="0.0.2",
+    version="0.0.3",
     author="Aurelio Saraiva",
     author_email="aurelio.saraiva@creditas.com.br",
     description="NewRelic deployment notify",
@@ -19,5 +19,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ),
-    install_requires=[]
+    install_requires=[
+        'requests'
+    ]
 )
